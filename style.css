@@ -551,6 +551,7 @@ section{
     position: relative;
     overflow: hidden;
 }
+<<<<<<< HEAD
 .image-card{
 
     position:relative;
@@ -581,6 +582,8 @@ section{
 
     transform:scale(1.05);
 }
+=======
+>>>>>>> 1d2aa40 (Updated website UI, innovations section and footer)
 
 .card-image{
 
