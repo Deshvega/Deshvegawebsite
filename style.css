@@ -223,9 +223,9 @@ section{
 
 .logo img{
 
-    width:52px;
+    width: 80px;
 
-    height:52px;
+    height:auto;
 
     object-fit:contain;
 }
@@ -286,12 +286,23 @@ section{
     position:relative;
 
     overflow:hidden;
+      background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(124,92,255,0.25),
+            transparent 30%
+        ),
 
-    background:
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(79,93,245,0.18),
+            transparent 35%
+        ),
+
         linear-gradient(
             to bottom,
             #ffffff,
-            #eef4ff
+            #f8faff
         );
 }
 
@@ -354,13 +365,28 @@ section{
 
 .hero-title{
 
-    font-size:78px;
+    font-size:92px;
 
-    line-height:1.05;
+    line-height:1;
 
     margin-bottom:30px;
 
     font-family:'Space Grotesk',sans-serif;
+    font-weight: 800;
+    color: #081F4D;
+    max-width: 1000px;
+}
+.hero-title span{
+
+    background: linear-gradient(
+        90deg,
+        #4F5DF5,
+        #7C5CFF
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
 }
 
 /* Text */
@@ -521,8 +547,29 @@ section{
 
     transition:0.35s;
 
-    border:
-        1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:0;
+
+    width:180px;
+
+    opacity:0.30;
+
+    z-index:1;
+}
+
+.about-card:hover .card-image{
+
+    transform:scale(1.08);
 }
 
 /* Hover */
@@ -579,6 +626,32 @@ section{
             #ffffff,
             #eef4ff
         );
+}
+
+.innovation-showcase{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:30px 0 25px;
+}
+
+.innovation-showcase img{
+
+    width:100%;
+
+    max-width:500px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:drop-shadow(
+        0 20px 40px rgba(79,93,245,0.15)
+    );
 }
 
 /* Text */
@@ -678,6 +751,120 @@ section{
 .workflow-section{
 
     background:white;
+}
+
+.workflow-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    transition:.4s;
+
+    box-shadow:
+        0 10px 40px rgba(79,93,245,.08);
+}
+.workflow-number{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3D6BFF,
+            #7B4DFF
+        );
+
+    color:#fff;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+}
+.workflow-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:
+        rgba(79,93,245,.08);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:40px;
+
+    margin-bottom:25px;
+}
+.workflow-connector{
+
+    width:60px;
+
+    height:4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3D6BFF,
+            #7B4DFF
+        );
+
+    border-radius:20px;
+
+    margin:auto;
+}
+.workflow-card::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:25px;
+
+    right:25px;
+
+    bottom:0;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3D6BFF,
+            #7B4DFF
+        );
+}
+
+.workflow-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 25px 50px rgba(79,93,245,.15);
 }
 
 /* Text */
@@ -815,14 +1002,15 @@ section{
 
 .footer-logo img{
 
-    width:52px;
+    width: 80px;
+    height: auto;
 }
 
 .footer-logo span{
 
-    font-size:34px;
+    font-size:42px;
 
-    font-weight:700;
+    font-weight:800;
 
     font-family:'Space Grotesk',sans-serif;
 }
@@ -834,6 +1022,53 @@ section{
     color:#CBD5E1;
 
     line-height:1.9;
+    font-size:18px;
+     max-width:500px;
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:30px;
+}
+
+.footer-social a{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.08);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.footer-social a:hover{
+
+    background:linear-gradient(
+        135deg,
+        #3D6BFF,
+        #7B4DFF
+    );
+
+    transform:translateY(-5px);
 }
 
 /* Heading */
@@ -853,6 +1088,17 @@ section{
 
     gap:14px;
 }
+.footer-links a{
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+
+    color:#6D7DFF;
+
+    transform:translateX(5px);
+}
 
 .footer-links a,
 .footer-links p{
@@ -862,20 +1108,33 @@ section{
     text-decoration:none;
 }
 
-/* Bottom */
+.footer-divider{
 
+    height:2px;
+
+    margin-top:60px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #3D6BFF,
+        #7B4DFF,
+        transparent
+    );
+}
+
+/* Bottom */
 .footer-bottom{
 
-    margin-top:70px;
+    margin-top:40px;
 
     padding-top:30px;
-
-    border-top:
-        1px solid rgba(255,255,255,0.08);
 
     text-align:center;
 
     color:#94A3B8;
+
+    font-size:16px;
 }
 
 /* =========================
@@ -1337,7 +1596,7 @@ h2{
     backdrop-filter:
         blur(18px);
 
-    padding:18px 0;
+    padding:12px 0;
 
     border-bottom:
         1px solid rgba(255,255,255,0.3);
@@ -1382,11 +1641,11 @@ h2{
 
 .logo img{
 
-    width:52px;
+    width: 80px;
 
-    height:52px;
+    height:auto;
 
-    object-fit:contain;
+   
 }
 
 /* Nav Links */
