@@ -499,13 +499,13 @@ section{
 
 .section-title{
 
-    font-size:58px;
+     font-size:64px;
 
-    line-height:1.15;
+    font-weight:800;
 
-    margin-bottom:24px;
+    letter-spacing:-2px;
 
-    font-family:'Space Grotesk',sans-serif;
+    line-height:1.1;
 }
 
 /* Text */
@@ -550,6 +550,36 @@ section{
     border: 1px solid rgba(0,0,0,0.05);
     position: relative;
     overflow: hidden;
+}
+.image-card{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card-bg-image{
+
+    position:absolute;
+
+    right:-10px;
+
+    bottom:-10px;
+
+    width:150px;
+
+    opacity:.28;
+
+    pointer-events:none;
+
+    transition:.35s;
+}
+
+.image-card:hover .card-bg-image{
+
+    opacity:.42;
+
+    transform:scale(1.05);
 }
 
 .card-image{
@@ -1251,9 +1281,16 @@ section{
         text-align:center;
     }
 
-    .hero-title{
+    .hero-title{    
+        
+    font-size:92px;
 
-        font-size:56px;
+    font-weight:800;
+
+    letter-spacing:-3px;
+
+    line-height:1;
+}
     }
 
     .hero-text{
