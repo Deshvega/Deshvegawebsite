@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,32 +12,25 @@
 
     <!-- Bootstrap -->
 
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Custom CSS -->
 
@@ -44,15 +38,13 @@
 
     <!-- Favicon -->
 
-    <link 
-    rel="icon" 
-    type="image/png" 
-    href="assets/favicon.png">
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/favicon.png">
 
 </head>
-
 <body>
-
 <!-- =========================
      PREMIUM GLASS NAVBAR
 ========================= -->
@@ -63,95 +55,67 @@
 
         <!-- Logo -->
 
-        <a class="navbar-brand logo" href="#">
+        <a class="navbar-brand logo" href="#hero">
 
-            <img 
-            src="Onlylogo.png"
-            alt="Deshvega">
+            <img
+                src="Onlylogo.png"
+                alt="Deshvega Logo">
 
-            <span>
-
-                DESHVEGA
-
-            </span>
+            <span>DESHVEGA</span>
 
         </a>
 
         <!-- Mobile Toggle -->
 
-        <button 
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
 
             <span class="navbar-toggler-icon"></span>
 
         </button>
 
-        <!-- Links -->
+        <!-- Navigation -->
 
-        <div 
-        class="collapse navbar-collapse"
-        id="navbarNav">
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
 
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="#hero">
-
-                        Home
-
-                    </a>
-
+                    <a class="nav-link" href="#hero">Home</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="#about">
-
-                        About
-
-                    </a>
-
+                    <a class="nav-link" href="#about">About</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="#innovations">
-
-                        Innovations
-
-                    </a>
-
+                    <a class="nav-link" href="#innovations">Innovations</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="#workflow">
-
-                        Workflow
-
-                    </a>
-
+                    <a class="nav-link" href="#workflow">Workflow</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="#careers">
-
-                        Careers
-
-                    </a>
-
+                    <a class="nav-link" href="#careers">Careers</a>
                 </li>
 
             </ul>
 
-            <!-- CTA -->
-
-            
+            <!-- CTA Button (Optional) -->
+            <!--
+            <a href="#careers" class="btn nav-cta">
+                Join Us
+            </a>
+            -->
 
         </div>
 
@@ -160,24 +124,25 @@
 </nav>
 <!-- =========================
      HERO SECTION
-========================== -->
+========================= -->
 
-<section class="hero-section" id="hero">
+<section id="hero" class="hero-section">
+
     <div id="particles-js"></div>
 
     <div class="container">
 
         <div class="row align-items-center min-vh-100">
 
-            <!-- Left -->
+            <!-- Left Content -->
 
-            <div class="col-lg-7">
+            <div class="col-lg-12 col-12">
 
                 <div class="hero-content">
 
                     <div class="hero-badge">
 
-                         FUTURE INNOVATION • DIGITAL TRANSFORMATION • BUILT TO LEAD
+                        FUTURE INNOVATION • DIGITAL TRANSFORMATION • BUILT TO LEAD
 
                     </div>
 
@@ -199,18 +164,21 @@
 
                     <div class="hero-buttons">
 
-                       <button 
-                        class="btn-primary-custom"
-                        onclick="openVisionModal()">
+                        <button
+                            type="button"
+                            class="btn-primary-custom"
+                            onclick="openVisionModal()">
 
-                           Our Vision
+                            Our Vision
 
                         </button>
-                        <button 
-                          class="btn-secondary-custom"
-                          onclick="openInternshipForm()">
 
-                              Apply Internship 
+                        <button
+                            type="button"
+                            class="btn-secondary-custom"
+                            onclick="openInternshipForm()">
+
+                            Apply for Internship
 
                         </button>
 
@@ -220,44 +188,37 @@
 
             </div>
 
-            <!-- Right -->
+            <!-- Right Content -->
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-12">
 
                 <div class="hero-visual">
 
-                    
+                    <!-- Right -->
 
-                    
-                </div>
-
-            </div>
 
         </div>
 
     </div>
 
-</section>
-<!-- =========================
+</section><!-- =========================
      ABOUT SECTION
-========================== -->
+========================= -->
 
-<section class="about-section" id="about">
+<section id="about" class="about-section">
 
     <div class="container">
 
         <div class="row align-items-center g-5">
 
-            <!-- Left -->
+            <!-- Left Content -->
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
 
                 <div class="about-content">
 
                     <div class="section-badge">
-
                         WHO WE ARE
-
                     </div>
 
                     <h2 class="section-title">
@@ -288,23 +249,18 @@
                 </div>
 
             </div>
-            
 
-            <!-- Right -->
+            <!-- Right Content -->
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
 
                 <div class="about-grid">
 
-                    <!-- Card -->
+                    <!-- Card 1 -->
 
-                    <div class="about-card">
+                    <div class="about-card image-card">
 
-                        <h3>
-
-                            AI Innovation
-
-                        </h3>
+                        <h3>AI Innovation</h3>
 
                         <p>
 
@@ -312,67 +268,76 @@
                             powered by modern AI technologies.
 
                         </p>
+
                         <img
-                             src="ai-innovation.png"
-                             alt="AI Innovation"
-                             class="card-image">
-        
+                            src="ai-innovation.png"
+                            alt="AI Innovation"
+                            class="card-image img-fluid">
 
                     </div>
 
-                    <!-- Card -->
+                    <!-- Card 2 -->
 
                     <div class="about-card image-card">
 
-    <h3>IoT Ecosystems</h3>
+                        <h3>IoT Ecosystems</h3>
 
-    <p>
-        Creating connected platforms
-        for smarter digital experiences.
-    </p>
+                        <p>
 
-    <img
-        src="IOT Ecosystem.png"
-        alt="IoT Ecosystem"
-        class="card-bg-image">
+                            Creating connected platforms
+                            for smarter digital experiences.
 
-</div>
-                    <!-- Card -->
+                        </p>
 
-                    <div class="about-card image-card">
+                        <img
+                            src="IOT Ecosystem.png"
+                            alt="IoT Ecosystem"
+                            class="card-bg-image img-fluid">
 
-    <h3>Workforce Solutions</h3>
+                    </div>
 
-    <p>
-        Simplifying workforce
-        management through
-        scalable platforms.
-    </p>
-
-    <img
-        src="workforce-platform.png"
-        alt="Workforce Platform"
-        class="card-bg-image">
-
-</div>
-                    <!-- Card -->
+                    <!-- Card 3 -->
 
                     <div class="about-card image-card">
 
-    <h3>Future Vision</h3>
+                        <h3>Workforce Solutions</h3>
 
-    <p>
-        Designing future-ready
-        products focused on
-        innovation and impact.
-    </p>
+                        <p>
 
-    <img
-        src="future-vision.png"
-        alt="Future Vision"
-        class="card-bg-image">
+                            Simplifying workforce
+                            management through
+                            scalable platforms.
 
-</div>
+                        </p>
+
+                        <img
+                            src="workforce-platform.png"
+                            alt="Workforce Platform"
+                            class="card-bg-image img-fluid">
+
+                    </div>
+
+                    <!-- Card 4 -->
+
+                    <div class="about-card image-card">
+
+                        <h3>Future Vision</h3>
+
+                        <p>
+
+                            Designing future-ready
+                            products focused on
+                            innovation and impact.
+
+                        </p>
+
+                        <img
+                            src="future-vision.png"
+                            alt="Future Vision"
+                            class="card-bg-image img-fluid">
+
+                    </div>
+
                 </div>
 
             </div>
@@ -381,12 +346,11 @@
 
     </div>
 
-</section>
-<!-- =========================
+</section><!-- =========================
      INNOVATIONS SECTION
-========================== -->
+========================= -->
 
-<section class="innovations-section" id="innovations">
+<section id="innovations" class="innovations-section">
 
     <div class="container">
 
@@ -417,23 +381,27 @@
             </p>
 
         </div>
-         <div class="innovation-showcase">
 
-    <img
-        src="innovation-ecosystem.png"
-        alt="Deshvega Innovation Ecosystem">
+        <!-- Showcase -->
 
-</div>
+        <div class="innovation-showcase">
 
-        <!-- Cards -->
+            <img
+                src="innovation-ecosystem.png"
+                class="img-fluid"
+                alt="Deshvega Innovation Ecosystem">
 
-        <div class="row g-4">
+        </div>
 
-            <!-- Card -->
+        <!-- Innovation Cards -->
 
-            <div class="col-lg-4 col-md-6">
+        <div class="row g-4 justify-content-center">
 
-                <div class="innovation-card">
+            <!-- Card 1 -->
+
+            <div class="col-lg-4 col-md-6 col-12">
+
+                <div class="innovation-card h-100">
 
                     <div class="innovation-icon">
 
@@ -458,11 +426,11 @@
 
             </div>
 
-            <!-- Card -->
+            <!-- Card 2 -->
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-12">
 
-                <div class="innovation-card">
+                <div class="innovation-card h-100">
 
                     <div class="innovation-icon">
 
@@ -487,11 +455,11 @@
 
             </div>
 
-            <!-- Card -->
+            <!-- Card 3 -->
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-12">
 
-                <div class="innovation-card">
+                <div class="innovation-card h-100">
 
                     <div class="innovation-icon">
 
@@ -520,12 +488,11 @@
 
     </div>
 
-</section>
-<!-- =========================
+</section><!-- =========================
      WORKFLOW SECTION
-========================== -->
+========================= -->
 
-<section class="workflow-section" id="workflow">
+<section id="workflow" class="workflow-section">
 
     <div class="container">
 
@@ -557,27 +524,23 @@
 
         </div>
 
-        <!-- Steps -->
+        <!-- Workflow Cards -->
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
 
-            <!-- Step -->
+            <!-- Card 1 -->
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-12">
 
-                <div class="workflow-card">
+                <div class="workflow-card h-100">
 
                     <div class="workflow-number">01</div>
 
                     <div class="workflow-icon">
-                       🔍
+                        🔍
                     </div>
 
-                    <h3>
-
-                        Research
-
-                    </h3>
+                    <h3>Research</h3>
 
                     <p>
 
@@ -590,26 +553,19 @@
 
             </div>
 
-            <!-- Step -->
+            <!-- Card 2 -->
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-12">
 
-                <div class="workflow-card">
+                <div class="workflow-card h-100">
 
-                    <div class="workflow-number">
+                    <div class="workflow-number">02</div>
 
-                        02
-
-                    </div>
                     <div class="workflow-icon">
-    💡
-</div>
+                        💡
+                    </div>
 
-                    <h3>
-
-                        Innovation
-
-                    </h3>
+                    <h3>Innovation</h3>
 
                     <p>
 
@@ -622,26 +578,19 @@
 
             </div>
 
-            <!-- Step -->
+            <!-- Card 3 -->
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-12">
 
-                <div class="workflow-card">
+                <div class="workflow-card h-100">
 
-                    <div class="workflow-number">
+                    <div class="workflow-number">03</div>
 
-                        03
-
-                    </div>
                     <div class="workflow-icon">
-    ⚙️
-</div>
+                        ⚙️
+                    </div>
 
-                    <h3>
-
-                        Development
-
-                    </h3>
+                    <h3>Development</h3>
 
                     <p>
 
@@ -654,26 +603,19 @@
 
             </div>
 
-            <!-- Step -->
+            <!-- Card 4 -->
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-12">
 
-                <div class="workflow-card">
+                <div class="workflow-card h-100">
 
-                    <div class="workflow-number">
+                    <div class="workflow-number">04</div>
 
-                        04
-
-                    </div>
                     <div class="workflow-icon">
-    🚀
-</div>
+                        🚀
+                    </div>
 
-                    <h3>
-
-                        Impact
-
-                    </h3>
+                    <h3>Impact</h3>
 
                     <p>
 
@@ -690,14 +632,13 @@
 
     </div>
 
-</section>
-<!-- =========================
+</section><!-- =========================
      CAREERS SECTION
-========================== -->
+========================= -->
 
-<section class="py-5 bg-light" id="careers">
+<section id="careers" class="careers-section">
 
-    <div class="container py-5">
+    <div class="container">
 
         <!-- Heading -->
 
@@ -716,7 +657,7 @@
 
             </h2>
 
-            <p class="section-text mx-auto" style="max-width:760px;">
+            <p class="section-text careers-text">
 
                 Deshvega is looking for passionate
                 innovators interested in AI systems,
@@ -726,13 +667,13 @@
 
         </div>
 
-        <!-- Cards -->
+        <!-- Career Cards -->
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
 
-            <!-- Card -->
+            <!-- Card 1 -->
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-12">
 
                 <div class="career-card h-100">
 
@@ -754,9 +695,9 @@
 
             </div>
 
-            <!-- Card -->
+            <!-- Card 2 -->
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-12">
 
                 <div class="career-card h-100">
 
@@ -778,9 +719,9 @@
 
             </div>
 
-            <!-- Card -->
+            <!-- Card 3 -->
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-12">
 
                 <div class="career-card h-100">
 
@@ -793,15 +734,16 @@
                     <p>
 
                         Send your resume and portfolio
-                        to our official email.
+                        to our official internship portal.
 
                     </p>
 
-                    <button 
-                       class="btn btn-primary-custom mt-3"
-                       onclick="openInternshipForm()">
+                    <button
+                        type="button"
+                        class="btn btn-primary-custom mt-3"
+                        onclick="openInternshipForm()">
 
-                       Apply Internship
+                        Apply for Internship
 
                     </button>
 
@@ -813,26 +755,34 @@
 
     </div>
 
-</section>
-<!-- =========================
+</section><!-- =========================
      INTERNSHIP MODAL
-========================== -->
+========================= -->
 
-<div class="internship-modal" id="internshipModal">
+<div
+    class="internship-modal"
+    id="internshipModal"
+    aria-hidden="true">
 
-    <div class="internship-container">
+    <div
+        class="internship-container"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="internshipTitle">
 
-        <!-- Close -->
+        <!-- Close Button -->
 
-        <span 
-        class="close-modal"
-        onclick="closeInternshipForm()">
+        <button
+            type="button"
+            class="close-modal"
+            onclick="closeInternshipForm()"
+            aria-label="Close Internship Form">
 
             &times;
 
-        </span>
+        </button>
 
-        <h2>
+        <h2 id="internshipTitle">
 
             Internship Application
 
@@ -840,8 +790,7 @@
 
         <p>
 
-            Apply for the Deshvega
-            Software Engineer Internship Program.
+            Apply for the Deshvega Software Engineer Internship Program.
 
         </p>
 
@@ -849,44 +798,46 @@
 
         <form id="internshipForm">
 
-            <input 
-            type="text"
-            class="form-control mb-3"
-            placeholder="Full Name"
-            id="name"
-            required>
+            <input
+                type="text"
+                id="name"
+                class="form-control mb-3"
+                placeholder="Full Name"
+                autocomplete="name"
+                required>
 
-            <input 
-            type="email"
-            class="form-control mb-3"
-            placeholder="Email Address"
-            id="email"
-            required>
+            <input
+                type="email"
+                id="email"
+                class="form-control mb-3"
+                placeholder="Email Address"
+                autocomplete="email"
+                required>
 
-            <input 
-            type="text"
-            class="form-control mb-3"
-            placeholder="College / University"
-            id="college"
-            required>
+            <input
+                type="text"
+                id="college"
+                class="form-control mb-3"
+                placeholder="College / University"
+                autocomplete="organization"
+                required>
 
-            <input 
-            type="file"
-            class="form-control mb-3"
-            id="resume"
-            accept=".pdf,.doc,.docx"
-            required>
-          
+            <input
+                type="file"
+                id="resume"
+                class="form-control mb-3"
+                accept=".pdf,.doc,.docx"
+                required>
 
-            <textarea 
-            class="form-control mb-4"
-            rows="4"
-            placeholder="Why do you want to join Deshvega?"
-            id="message"></textarea>
+            <textarea
+                id="message"
+                class="form-control mb-4"
+                rows="4"
+                placeholder="Why do you want to join Deshvega?"></textarea>
 
-            <button 
-            type="submit"
-            class="btn btn-primary-custom w-100">
+            <button
+                type="submit"
+                class="btn btn-primary-custom w-100">
 
                 Submit Application
 
@@ -896,11 +847,9 @@
 
     </div>
 
-</div>
-
-<!-- =========================
+</div><!-- =========================
      FOOTER
-========================== -->
+========================= -->
 
 <footer class="footer-section">
 
@@ -910,19 +859,15 @@
 
             <!-- Brand -->
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-12 col-12">
 
-                <div class="footer-logo d-flex align-items-center gap-3 mb-4">
+                <div class="footer-logo">
 
-                    <img 
-                    src="Onlylogo.png"
-                    alt="Deshvega Logo">
+                    <img
+                        src="Onlylogo.png"
+                        alt="Deshvega Logo">
 
-                    <span>
-
-                        DESHVEGA
-
-                    </span>
+                    <span>DESHVEGA</span>
 
                 </div>
 
@@ -934,30 +879,51 @@
 
                 </p>
 
+                <!-- Social Links -->
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://linkedin.com/in/YOUR_PROFILE"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="GitHub">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="X">
+
+                        <i class="fab fa-x-twitter"></i>
+
+                    </a>
+
+                </div>
+
             </div>
-            <div class="footer-social">
 
-    <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-    </a>
+            <!-- Quick Links -->
 
-    <a href="#">
-        <i class="fab fa-github"></i>
-    </a>
-
-    <a href="#">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="#">
-        <i class="fab fa-x-twitter"></i>
-    </a>
-
-</div>
-
-            <!-- Links -->
-
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 col-12">
 
                 <h4 class="footer-heading">
 
@@ -968,9 +934,13 @@
                 <div class="footer-links">
 
                     <a href="#hero">Home</a>
+
                     <a href="#about">About</a>
+
                     <a href="#innovations">Innovations</a>
+
                     <a href="#workflow">Workflow</a>
+
                     <a href="#careers">Careers</a>
 
                 </div>
@@ -979,7 +949,7 @@
 
             <!-- Contact -->
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-12">
 
                 <h4 class="footer-heading">
 
@@ -989,55 +959,58 @@
 
                 <div class="footer-links">
 
-                    <p>
-                        deshvegatechnologies@gmail.com
-                    </p>
+                    <p>deshvegatechnologies@gmail.com</p>
 
-                    <p>
-                        Hyderabad, India
-                    </p>
+                    <p>Hyderabad, India</p>
 
                 </div>
 
             </div>
 
         </div>
+
         <!-- Divider -->
 
         <div class="footer-divider"></div>
 
         <!-- Bottom -->
-        
-        <div class="footer-bottom">
-              © 2026 Deshvega Technologies • Built To Lead
 
+        <div class="footer-bottom">
+
+            © 2026 Deshvega Technologies • Built To Lead
 
         </div>
 
     </div>
 
-</footer>
-
-
-<!-- Bootstrap JS -->
-
-<!-- =========================
+</footer><!-- =========================
      VISION MODAL
 ========================= -->
 
-<div class="vision-modal" id="visionModal">
+<div
+    class="vision-modal"
+    id="visionModal"
+    aria-hidden="true">
 
-    <div class="vision-container">
+    <div
+        class="vision-container"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="visionTitle">
 
-        <span 
-        class="close-modal"
-        onclick="closeVisionModal()">
+        <!-- Close Button -->
+
+        <button
+            type="button"
+            class="vision-close"
+            onclick="closeVisionModal()"
+            aria-label="Close Vision Modal">
 
             &times;
 
-        </span>
+        </button>
 
-        <h2>
+        <h2 id="visionTitle">
 
             Our Vision
 
@@ -1045,16 +1018,24 @@
 
         <p class="vision-text">
 
-            At Deshvega, we envision a future where 
-            technology becomes a bridge between ideas 
+            At Deshvega, we envision a future where
+            technology becomes a bridge between ideas
             and real-world transformation.
 
-            We are building intelligent platforms powered 
-            by AI, IoT, and innovation to simplify lives, 
+        </p>
+
+        <p class="vision-text">
+
+            We are building intelligent platforms powered
+            by AI, IoT, and innovation to simplify lives,
             empower industries, and create scalable impact.
 
-            Our mission is to shape the next generation 
-            of digital ecosystems that inspire progress, 
+        </p>
+
+        <p class="vision-text">
+
+            Our mission is to shape the next generation
+            of digital ecosystems that inspire progress,
             accelerate innovation, and redefine the future.
 
         </p>
@@ -1062,12 +1043,20 @@
     </div>
 
 </div>
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Particles.js -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
 </script>
 
 <!-- Custom JS -->
- <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 <script src="script.js"></script>
 
