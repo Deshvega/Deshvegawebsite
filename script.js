@@ -125,3 +125,32 @@ function closeVisionModal(){
     .classList
     .remove("active");
 }
+/* =========================
+   AUTO CLOSE MOBILE NAVBAR
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            if (window.innerWidth < 992) {
+
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
+                    || new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+
+                bsCollapse.hide();
+
+            }
+
+        });
+
+    });
+
+});
