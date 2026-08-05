@@ -134,21 +134,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
     const navbarCollapse = document.getElementById("navbarNav");
 
-    navLinks.forEach(link => {
+    navLinks.forEach(function (link) {
 
         link.addEventListener("click", function () {
 
-            if (window.innerWidth < 992) {
+            if (window.innerWidth < 992 && navbarCollapse.classList.contains("show")) {
 
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
-                    || new bootstrap.Collapse(navbarCollapse, {
-                        toggle: false
-                    });
-
-                bsCollapse.hide();
+                const collapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+                collapse.hide();
 
             }
 
         });
 
     });
+
+});
